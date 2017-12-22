@@ -345,7 +345,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        onClick: this.commonChooseFile
 	      }, [].concat(_toConsumableArray(this.props.chooseFileButton.props.children ? [this.props.chooseFileButton.props.children] : []), [_react2.default.createElement('input', _extends({ type: 'file', ref: function ref(r) {
 	          return _this2.input = r;
-	        }, name: 'ajax-upload-file-input', style: { display: 'none' }, onChange: this.commonChangeFile }, inputProps, { key: 'file-button' }))]));
+	        }, name: this.props.inputName || 'ajax-upload-file-input', style: { display: 'none' }, onChange: this.commonChangeFile }, inputProps, { key: 'file-button' }))]));
 	      var uploadFileButton = this.props.uploadFileButton && _react2.default.cloneElement(this.props.uploadFileButton, {
 	        onClick: this.commonUploadFile
 	      });

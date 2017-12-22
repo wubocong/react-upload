@@ -68,6 +68,7 @@ accept | String | undefined | Limit the type of file
 multiple | Boolean | false | Allow multi-upload or not
 numberLimit | Number | 0 | Limit how many files can be uploaded a time, 0 means no limit.
 fileFieldName | String/Function | undefined | Determine the field name of file. If it is a function, which will receive each file object as argument, use its return value. Default to file's name
+inputName | String | 'ajax-upload-file-input' | File input tag name
 withCredentials | Boolean | false | Same as 'xhr.withCredentials'
 requestHeaders | Object | undefined | Key-values that will be set using 'xhr.setRequestHeader(key, value)'
 userAgent | String | window.navigator.userAgent | Used to set the userAgent string with serverside rendering isomorphic applications(required when rendering on the server)
@@ -261,6 +262,7 @@ options: {
   fileFieldName: (file) {
     return file.name;
   },
+  inputName: 'ajax-upload-file-input',
   withCredentials: false,
   requestHeaders: {
     'User-Agent': 'Warrior!'
