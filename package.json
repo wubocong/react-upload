@@ -7,7 +7,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --progress",
     "start": "npm run build"
   },
   "keywords": [
